@@ -50,7 +50,7 @@
                                     {{ csrf_field() }}
                                     {{ method_field('DELETE') }}
 
-                                    <button class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this task?')">
+                                    <button class="btn btn-danger" onclick="return confirm('Are you sure you want to delete {{ $task->name }}?')">
                                         <i class="fa-solid fa-trash"></i> Delete
                                     </button>
                                 </form>
